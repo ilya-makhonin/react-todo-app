@@ -1,4 +1,9 @@
 .idea/
 node_modules/
+bower_components/
 dist/
+build/
+bundle/
+*.log
+*/*.log
 package-lock.json
