@@ -1,0 +1,6 @@
+.todo-item {  }
+
+.todo-item-done {
+  @extend .todo-item;
+  background: lightblue;
+}
