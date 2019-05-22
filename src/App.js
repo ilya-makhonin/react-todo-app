@@ -9,7 +9,7 @@ class App extends Component {
     render() {
         return (
             <Provider store={ store }>
-                <div className="wrapper">
+                <div className="app">
                     <TodoContainer />
                 </div>
             </Provider>

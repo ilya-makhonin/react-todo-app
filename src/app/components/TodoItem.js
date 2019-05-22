@@ -6,18 +6,18 @@ const TodoItem = ({ id, title, description, deadLine, doneTask, deleteTask, isDo
     const currentTime = `${deadLine.getFullYear()}.${deadLine.getMonth() + 1}.${deadLine.getDay()}`;
     return (
         <div className={ isDone ? 'todo-item-done' : 'todo-item' }>
-            <h4>{ title }</h4>
-            <div>
-                <p>{ description }</p>
-                <span>{ currentTime }</span>
+            <h4 className="todo-item_header">{ title }</h4>
+            <div className="todo-item_content">
+                <p className="todo-item_desc">{ description }</p>
+                <span className="todo-item_term">{ currentTime }</span>
             </div>
-            <div>
+            <div className="todo-item_buttons">
                 {
                    !isDone
-                       ? <button onClick={() => { doneTask(id) }}>Done</button>
+                       ? <button className="todo-item_btn-done" onClick={() => { doneTask(id) }}>Done</button>
                        : null
                 }
-                <button onClick={() => { deleteTask(id) }}>Delete</button>
+                <button className="todo-item_btn-delete" onClick={() => { deleteTask(id) }}>Delete</button>
             </div>
         </div>
     );

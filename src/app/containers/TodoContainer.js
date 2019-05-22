@@ -9,7 +9,7 @@ import { addTask, deleteTask, doneTask } from 'actions';
 class TodoContainer extends Component {
     render() {
         return (
-            <div>
+            <div className="todo-container">
                 <Header />
                 <TaskInput addTask={ this.props.addTask } />
                 <TodoList
