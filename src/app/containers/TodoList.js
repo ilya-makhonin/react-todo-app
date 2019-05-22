@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 
 
 const TodoList = (props) => {
-    const notTasks = <div>Not tasks yet. Create a new task!</div>;
+    const notTasks = <div className="todo-list_without-tasks">Not tasks yet. Create a new task!</div>;
     return (
-        <section>
+        <section className="todo-list">
             {
                 props.tasks.length
                     ?
