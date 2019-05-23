@@ -4,4 +4,4 @@ import App from './App';
 
 
 // Basics entry point
-ReactDOM.render(<App />, document.getElementById('mountPlace'));
+ReactDOM.render( <App /> , document.getElementById('mountPlace'));

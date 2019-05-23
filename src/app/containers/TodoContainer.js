@@ -8,15 +8,15 @@ import { addTask, deleteTask, doneTask } from 'actions';
 
 class TodoContainer extends Component {
     render() {
-        return (
-            <div className="todo-container">
+        return ( 
+            <div className = "todo-container" >
                 <Header />
-                <TaskInput addTask={ this.props.addTask } />
-                <TodoList
-                    tasks={ this.props.tasks }
-                    doneTask={ this.props.doneTask }
-                    deleteTask={ this.props.deleteTask }
-                />
+                <TaskInput addTask = { this.props.addTask }/> 
+                <TodoList 
+                    tasks = { this.props.tasks }
+                    doneTask = { this.props.doneTask }
+                    deleteTask = { this.props.deleteTask }
+                /> 
             </div>
         );
     }
