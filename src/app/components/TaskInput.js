@@ -4,13 +4,15 @@ import PropTypes from 'prop-types';
 
 class TaskInput extends Component {
     _getData = () => {
-        return {
-            id: Math.floor(Date.now()),
-            title: this.inputTask.value,
-            description: this.textDescription.value,
-            deadLine: new Date(this.taskDate.value),
-            isDone: false
-        };
+        let title = this.inputTask.value;
+        let description = this.textDescription.value;
+        let deadLine = new Date(this.taskDate.value);
+        
+        this.inputTask.value = '';
+        this.textDescription.value = '';
+        this.taskDate.value = '';
+
+        return { id: Math.floor(Date.now()), title, description, deadLine, isDone: false };
     };
 
     render() {
