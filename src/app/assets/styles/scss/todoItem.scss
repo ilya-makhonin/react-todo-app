@@ -1,6 +1,58 @@
-.todo-item {  }
+.todo-item { 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid black;
+  margin-bottom: 7px; 
+ }
 
 .todo-item-done {
   @extend .todo-item;
   background: lightblue;
+}
+
+.todo-item_header {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin: 0;
+  padding: 6px 0; 
+}
+
+.todo-item_content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+
+  .todo-item_desc {
+    text-align: justify;
+    border-right: 1px solid black;
+    flex-grow: 7;
+    padding: 6px 10px;
+  }
+
+  .todo-item_term {
+    display: block;
+    padding: 6px 10px;
+  }
+}
+
+.todo-item_content * {
+  margin: 0;
+  box-sizing: content-box;
+}
+
+.todo-item_buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding: 8px 12px;
+}
+
+.todo-item_btn-done {
+  margin-right: 6px;
 }
