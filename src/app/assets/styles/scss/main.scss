@@ -1,4 +1,4 @@
-html, body {
+* {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
@@ -12,6 +12,6 @@ html, body {
 }
 
 
-@import "./todoContainer.scss";
-@import "./todoList";
-@import "./todoItem";
+@import "./wrapper.scss";
+@import "./todoList.scss";
+@import "./todoItem.scss";
