@@ -31,7 +31,10 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        addTask: data => dispatch(addTask(data)),
+        addTask: data => {
+            if (!data.title || !data.description || isNaN(data.deadLine)) return;
+            dispatch(addTask(data))
+        },
         doneTask: id => dispatch(doneTask(id)),
         deleteTask: id => dispatch(deleteTask(id))
     };
