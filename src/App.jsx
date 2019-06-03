@@ -3,6 +3,7 @@ import { hot } from 'react-hot-loader/root';
 import TodoContainer from 'containers/TodoContainer';
 import { Provider } from 'react-redux';
 import store from 'store';
+import 'styles/scss/main.scss';
 
 
 class App extends Component {
