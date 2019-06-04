@@ -1,0 +1,38 @@
+.task-input {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px auto;
+
+
+    .task-input_label {
+        width: 100% / 3;
+        text-align: center;
+        margin: 0 5px;
+
+        & > * { 
+            height: 30px;
+            border: 1px solid green;
+            outline: none;
+            border-radius: 10px;
+         }
+    }
+
+    .task-input_input {
+        flex-grow: 1;
+    }
+
+    .task-input_textarea {
+        flex-grow: 2;
+    }
+
+    .task-input_date {
+        flex-grow: 1;
+    }
+
+    .task-input_btn-add {
+
+    }
+}
