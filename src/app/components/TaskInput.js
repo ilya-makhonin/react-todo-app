@@ -33,7 +33,7 @@ class TaskInput extends Component {
                 </label>
                 <label className="task-input_label">
                     <input
-                        className="task-input_input"
+                        className="task-input_date"
                         ref={ node => this.taskDate = node }
                         type="date"
                     />
